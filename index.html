@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <title>c++ Documentation</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>c++ Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+      <li><a class="nav-link" href="#Classes">Classes</a></li>
+      <li><a class="nav-link" href="#Templates">Templates</a></li>
+      <li><a class="nav-link" href="#Standard_Library">Standard Library</a></li>
+      <li><a class="nav-link" href="#c++_vs_java">c++ vs java</a></li>
+      <li><a class="nav-link" href="#key_features">key features</a></li>
+      <li><a class="nav-link" href="#Overall">Overall</a></li>
+
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>C++ is a popular high-level programming language used to create a wide variety of applications, from games to
+        operating systems.</p>
+    </section>
+    <section id="Data_Types" class="main-section">
+      <header>Data Types</header>
+      <p>C++ provides a range of data types to work with, including primitive types like int, float, and char, as well
+        as more complex types like arrays and structures. You can also create your own custom data types using classes
+        and templates.</p>
+      <code>int x = 10</code>
+    </section>
+    <section id="Control_Structures" class="main-section">
+      <header>Control Structures</header>
+      <p>C++ provides a range of control structures to allow you to direct the flow of your program. These include
+        if-else statements, loops like for and while, and switch statements.</p>
+    </section>
+    <section id="Functions" class="main-section">
+      <header>Functions</header>
+      <p>Functions allow you to encapsulate a block of code that can be called from other parts of your program. They
+        can take parameters and return values, and can be used to simplify complex code.</p>
+      <code>int main(){
+          return 0;
+        }
+        </code>
+    </section>
+    <section id="Classes" class="main-section">
+      <header>Classes</header>
+      <p>Classes are a key feature of C++ and allow you to create your own custom data types. A class can contain data
+        members (variables) and member functions (methods), and can be used to represent real-world objects.</p>
+      <pre><code>class MyClass {
+          // Class members (data and functions)
+          public:
+          // Public member functions and variables
+          private:
+          // Private member functions and variables
+          protected:
+          // Protected member functions and variables
+};</code>
+</pre>
+      <pre><code>class Circle {
+            public:
+            // Constructor
+            Circle(double r) {
+            radius = r;
+          }
+
+        // Public member function to get the area of the circle
+        double getArea() {
+        return 3.14 * radius * radius;
+      }
+      private:
+      // Private member variable to store the radius
+      double radius;
+};</code></pre>
+<pre><code>int main() {
+  // Create a circle object with radius 5.0
+  Circle myCircle(5.0);
+
+  // Call the getArea() function and print the result
+  double area = myCircle.getArea();
+  std::cout << "The area of the circle is: " << area << std::endl;
+
+  return 0;
+}</code></pre>
+    </section>
+    <section id="Templates" class="main-section">
+      <header>Templates</header>
+      <p>Templates allow you to create generic functions and classes that can work with a range of data types. This can
+        be particularly useful when you need to write code that can be reused in multiple places.</p>
+    </section>
+    <section id="Standard_Library" class="main-section">
+      <header>Standard Library</header>
+      <p>C++ comes with a large standard library that provides a range of pre-built functions and classes for common
+        tasks. This includes input/output operations, containers like vectors and maps, and algorithms like sorting and
+        searching.</p>
+    </section>
+    <section id="c++_vs_java" class="main-section">
+      <header>c++ vs java</header>
+      <p>C++ and Java are two popular programming languages with their own strengths and weaknesses. Here are some key
+        differences between the two:</p>
+      <ol>
+        <li>Performance: C++ is generally considered to be a faster language than Java due to its emphasis on direct
+          memory manipulation and its ability to optimize code at compile time. However, Java has made significant
+          strides in recent years to improve its performance, especially with the introduction of just-in-time (JIT)
+          compilers.</li>
+        <li>Memory Management: C++ requires manual memory management, which means that the programmer must explicitly
+          allocate and deallocate memory for objects. Java, on the other hand, uses automatic memory management through
+          a garbage collector, which can make programming faster and less error-prone.</li>
+        <li>Object-Oriented Programming: Both languages support object-oriented programming, but Java is often
+          considered to be more "purely" object-oriented. Java has strict rules for object creation, and everything in
+          Java is an object, including primitive data types like integers and booleans. C++ allows for more flexibility
+          in how objects are created and managed.</li>
+        <li>Platform Independence: Java programs are designed to be platform-independent, meaning that they can be run
+          on any system that has a Java Virtual Machine (JVM) installed. C++, on the other hand, requires that separate
+          code be written for each platform on which it will be run.</li>
+        <li>Syntax and Code Structure: C++ and Java have different syntax and code structure, with C++ being more
+          flexible and Java being more structured. C++ uses pointers to manipulate memory, while Java uses references.
+          C++ allows for multiple inheritance, while Java only supports single inheritance.</li>
+        <li>Libraries and Frameworks: Both languages have large and active developer communities with many libraries and
+          frameworks available. However, Java has a larger number of libraries and frameworks due to its popularity in
+          enterprise development.</li>
+      </ol>
+    </section>
+    <section id="key_features" class="main-section">
+      <header>key features</header>
+      <p>
+      <ol>
+        <li>Object-oriented programming: C++ is an object-oriented language, which means that it supports the creation
+          of objects that encapsulate data and behavior.</li>
+        <li>High performance: C++ is a high-performance language, with low-level control over memory and direct access
+          to hardware resources, making it ideal for applications where speed is critical.</li>
+        <li>OCross-platform: C++ code can be compiled and run on a wide variety of platforms, including Windows, macOS,
+          Linux, and embedded systems.</li>
+        <li>Extensible: C++ is an extensible language that allows programmers to create new data types and functions
+          that can be used in their programs.</li>
+        <li>Standard library: C++ comes with a large standard library that provides a range of functions and data types
+          for common programming tasks, such as input/output, data structures, and algorithms.</li>
+        <li>Template meta-programming: C++ supports template meta-programming, which allows for generic programming and
+          the creation of reusable code.</li>
+        <li>Compatibility with C: C++ is backward-compatible with C, meaning that C code can be easily integrated into
+          C++ programs.</li>
+      </ol>
+      </p>
+    </section>
+    <section id="Overall" class="main-section">
+      <header>Overall</header>
+      <p>Overall, C++ is a powerful and flexible language with many features and capabilities. With a little practice,
+        you can use it to create efficient and effective programs for a wide range of applications.</p>
+    </section>
+
+  </main>
+</body>
+
+</html>
